@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Cards</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            background-color: #ffffff;
+            height: 480px;
+            width: 300px;
+            margin: 50px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .sky-blue{
+            background-color: #83acfe;
+        }
+        .tomato{
+            background-color: #fd5f6e;
+        }
+        .img-box{
+            height: 58%;
+            position: relative;
+        }
+        .img-box img{
+            width: 200px;
+            position: absolute;
+            bottom: -4px;
+            left: 50px;
+        }
+        .info{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .info .heading{
+            font-weight: bold;
+            font-size: 24px;
+            color: #4a3e54;
+        }
+        .info .desc{
+            color: #666;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="img-box sky-blue">
+                <img src="images/panda.png" alt="">
+            </div>
+            <div class="info">
+                <p class="heading">PANDA</p>
+                <p class="desc">A baby panda with a bambo.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-box tomato">
+                <img src="images/panda.png" alt="">
+            </div>
+            <div class="info">
+                <p class="heading">PANDA</p>
+                <p class="desc">A baby panda with a bambo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(".card").mouseenter(function(){
+            console.log("121");
+            console.log("123");
+        });
+    </script>
+</body>
+</html>
